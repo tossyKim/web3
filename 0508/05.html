@@ -8,24 +8,34 @@
         .box{
             width: 100px;
             height: 100px;
+            position: absolute;
         }
 
         .box:nth-child(1){
             background-color: red;
+            left: 10px;
+            top: 10px;
+            z-index: 10;
         }
         
         .box:nth-child(2){
             background-color: green;
+            left: 50px;
+            top: 50px;
+            z-index: 15;
         }
         
         .box:nth-child(3){
             background-color: blue;
+            left: 90px;
+            top: 90px;
+            z-index: 1;
         }
     </style>
 </head>
 <body>
-    <div clss="box"></div>
-    <div clss="box"></div>
-    <div clss="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
 </body>
 </html>
