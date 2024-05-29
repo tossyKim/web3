@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 960px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        #menu{
+            width: 260px;
+            float: right;
+        }
+        #section{
+            width: 700px;
+            float: left;
+        }
+        li{
+            list-style: none;
+        }
+        /* 소형 디바이스인 경우 스타일 */
+        @media screen and(max-width: 767px){
+            body{
+                width: auto;
+            }
+            #menu{
+                width: auto;
+                float: none;
+            }
+            #section{
+                width: auto;
+                float: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <ul>
+            <li>Munu 1</li>
+            <li>Munu 2</li>
+            <li>Munu 3</li>            
+        </ul>
+    </div>
+    <div id="section">
+        <h1>반응형 웹 패턴 2</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus ullam odio molestiae quidem magnam alias, quas, deserunt commodi sed eveniet vero fugit aliquid sit eum velit minima distinctio ex magni.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa odit, facilis, corporis temporibus libero rerum, soluta autem a possimus error voluptate cupiditate optio sed? Facere reiciendis possimus sint quidem minima.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet officiis similique nisi aspernatur numquam, placeat sed eius ratione nostrum pariatur itaque voluptatum repudiandae necessitatibus at deserunt quas explicabo? Placeat, minus.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo aspernatur adipisci praesentium accusamus aperiam odit eaque corporis fugiat. Esse nostrum minima numquam voluptate nulla vel impedit aliquam eius molestias doloremque.
+        </p>    
+    </div>
+</body>
+</html>
