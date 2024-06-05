@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+        1. 프롬프트를 이용해서 출생년도를 입력받고 나이를 구한다.
+        2. 조건문을 사용해서 나이가 19세 이하이면 청소년, 20세 이상이면
+            성인으로 알림 대화상자에 출력한다.
+        */
+        let date = new Date;
+
+        let birth = parseInt(prompt ("출생년도를 입력해주세요 (4자리)"));
+        let year = date.getFullYear();
+        let age = year - birth;
+        
+        let person = "";
+        if(age<=19)
+            person = "청소년";        
+        else
+            person = "성인";
+        
+
+        alert("나이 : " + age + "살" + "\n" + person);
+    </script>
+</head>
+<body>
+    
+</body>
+</html> 
