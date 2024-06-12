@@ -6,8 +6,10 @@
     <title>Document</title>
     <script>
         
-        function anonymousCallTem(fun){
-            for(let i=0; i<10; i++){
+        
+
+        function anonymousCallTem(fun, n){
+            for(let i=0; i<n; i++){
                 fun(i+1)
             }
         }
@@ -16,7 +18,8 @@
             alert("익명함수 호출됨 " + i)
         }
 
-        anonymousCallTem(fun);
+        let n = parseInt(prompt("반복할 횟수를 입력 :",10));
+        anonymousCallTem(fun, n);
     </script>
 </head>
 <body>
