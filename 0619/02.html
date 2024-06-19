@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changeObjeat(){
+            //h1 태그명을 갖는 요소객체를 배열형태로 반환해준다
+            let objs = document.querySelectorAll("h1");
+            for(let i=0;i<objs.length;i++){
+                objs[i].style.color = 'yellow';
+                objs[i].style.backgroundColor = 'black';
+                objs[i].innerHTML = "Seoul Jungsu Campus";
+            }
+            // obj.style.color = 'yellow';
+            // obj.style.backgroundColor = 'black';
+            // obj.innerHTML = "Seoul Jungsu Campus";
+        }
+    </script>
+</head>
+<body onload="changeObjeat()">
+    <h1>한국 폴리텍대학</h1>
+    <h1 id="campus">서울 정수캠퍼스 1학년</h1>
+    <h1>인공지능스포트웨어과</h1>
+</body>
+</html>
