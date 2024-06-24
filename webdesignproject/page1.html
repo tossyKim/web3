@@ -5,20 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>메인페이지</title>
     <link rel="stylesheet" href="page1.css">
-    <script>
-        alert("웹프로그래밍 과제 메인 화면입니다");
-        function intervalNow(){
+    <script>        
+
+        function intervalNow() {
             let now = new Date();
             obj.innerHTML = now.toString();
         }
+
         let obj;
-        function makeClock(){
+
+        function makeClock() {
             obj = document.getElementById("clock");
-            setInterval(intervalNow, 1000);            
+            setInterval(intervalNow, 1000);
         }
+
+        function changeTitle() {            
+            let h2str = document.querySelector(".main h2");
+            h2str.innerHTML = "볼 것이 많은";
+        }
+
+        function onPageLoad() {
+            makeClock();
+            changeTitle();
+        }
+
     </script>
 </head>
-<body onload="makeClock()">    
+<body onload="onPageLoad()"> 
     <div>
         <div>
             <p class="title">웹페이지 만들기 과제</p>
