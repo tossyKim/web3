@@ -5,12 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>메인페이지</title>
     <link rel="stylesheet" href="page1.css">
+    <script>
+        function intervalNow(){
+            let now = new Date();
+            obj.innerHTML = now.toString();
+        }
+
+        let obj;
+
+        function makeClock(){
+            obj = document.getElementById("clock");
+            setInterval(intervalNow, 1000);            
+        }
+    </script>
 </head>
-<body>
+<body onload="makeClock()">    
     <div>
         <div>
             <p class="title">웹페이지 만들기 과제</p>
+            <p id="clock"></p>
         </div>
+        
         <div class="banner">
             <ul>                
                 <li class="left"><a href="page1.html" style="color: white;">홈</a></li>                        
