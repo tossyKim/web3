@@ -64,4 +64,10 @@ body{
     position: absolute;
     top: 20%;
     left: 43%;
-}       
+}
+#clock{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
