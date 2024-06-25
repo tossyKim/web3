@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function callbackTest(color){
+            alert("안녕하세요~ 반갑습니다")
+            document.body.style.backgroundColor = color;
+        }
+        function originalBackgroundColor(color){            
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+</head>
+<body>
+    <button onclick="callbackTest('rgb(255,149,149,1)')">메시지 호출</button>
+    <button onclick="originalBackgroundColor('white')">원래대로</button>
+</body>
+</html>
